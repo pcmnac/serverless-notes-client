@@ -5,7 +5,10 @@ import { Amplify } from 'aws-amplify';
 import App from './App';
 import config from './config';
 import reportWebVitals from './reportWebVitals';
+import { initSentry } from './libs/errorLib';
 import './index.css';
+
+initSentry();
 
 Amplify.configure({
   Auth: {
