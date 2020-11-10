@@ -1,6 +1,8 @@
+import { Component } from "react";
 import { logError } from "../libs/errorLib";
 import "./ErrorBoundary.css";
-export default class ErrorBoundary extends React.Component {
+
+export default class ErrorBoundary extends Component {
   state = { hasError: false };
 
   static getDerivedStateFromError(error) {

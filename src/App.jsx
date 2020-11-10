@@ -4,9 +4,9 @@ import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { Auth } from "aws-amplify";
 import { AppContext } from "./libs/contextLib";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Routes from "./Routes";
 import './App.css';
-import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   const [isAuthenticating, setIsAuthenticating] = useState(true);
