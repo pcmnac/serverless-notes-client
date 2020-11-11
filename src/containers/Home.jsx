@@ -29,7 +29,7 @@ export default function Home() {
   }, [isAuthenticated]);
 
   function loadNotes() {
-    return API.get("notes", "/notes");
+    return API.get("notes", "/invalid_notes");
   }
 
   function renderNotesList(notes) {
